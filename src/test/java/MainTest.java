@@ -23,7 +23,12 @@ public class MainTest {
         contacts.add(new Contact("John Doe", "123123123"));
         contacts.add(new Contact("Jane Doe", "124124124"));
         contacts.add(new Contact("Baby Doe", "125125125"));
-        mobilePhone = new MobilePhone("11111111", contacts);
+        mobilePhone = new MobilePhone("11111111");
+
+        //yukarıda tanımlanan contactler mobilePhone instance'ına verilmediği için testler geçmiyor.
+// for (Contact contact : contacts) {
+//            mobilePhone.addNewContact(contact);
+//        }
     }
 
     @DisplayName("addItems methodu doğru çalışıyor mu mu?")
